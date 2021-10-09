@@ -7,7 +7,7 @@ const app = express();
 
 
 //Connect to DB and LISTEN
-const dbURI = "mongodb+srv://user_netninja:Test1234@cluster0.roysm.mongodb.net/netninja_tut?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://[username]:[pwd]@cluster0.roysm.mongodb.net/netninja_tut?retryWrites=true&w=majority";
 mongoose.connect(dbURI)
  .then( result => { console.log("Connected to DB!"); app.listen(3000); })
     .catch( err => { console.log("Oops! " + err);});
